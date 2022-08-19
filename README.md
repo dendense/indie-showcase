@@ -1,2 +1,9 @@
-# indie-showcase
-Showcase Anak Muda Kekinian Brader
+# Indie Showcase
+
+Showcase Anak Muda Kekinian Brader. Indie Showcase ini menggunakan [ReactJS](https://reactjs.org/docs/getting-started.html) sebagai Front-end Framework dan didukung dengan [Chakra-UI](https://chakra-ui.com/) untuk styling react components yang akan kami buat. Ada baiknya membaca dokumentasi React dan Chakra-UI sebelum ikut turut serta dalam pengembangan Website Showcase ini.
+
+Dalam tujuan utamanya Indie Showcase ini nantinya berguna bagi para pengusaha guna membuat website profile untuk menampilkan produk mereka pada website, tidak hanya itu nantinya akan dibuat beberapa module penjualan agar pengguna dapat mengaktifkan fitur jual beli dengan opsi diantaranya
+
+- Whatsapp Order
+- Reffering Online Shop (Tokopedia, Bukalapak, Shopee)
+- Native Selling Module
