@@ -1,13 +1,14 @@
 import * as React from "react";
 import { NextSeo } from "next-seo";
-import { Container } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 
 const Layout = ({ children, title, description }) => (
-  <Container>
+  <Box w="100%" padding={3}>
     <NextSeo title={title} description={description} />
+    {/* Every components will be rendered inside this scope */}
     {children}
-  </Container>
+  </Box>
 );
 
 Layout.propTypes = {

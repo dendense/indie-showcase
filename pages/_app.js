@@ -3,7 +3,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 // Custom SASS
 import "../styles/index.scss";
 
-function ProfileApp({ Component, pageProps }) {
+function ShowcaseApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
       <Component {...pageProps} />
@@ -11,4 +11,4 @@ function ProfileApp({ Component, pageProps }) {
   );
 }
 
-export default ProfileApp;
+export default ShowcaseApp;
