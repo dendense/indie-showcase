@@ -8,12 +8,13 @@ import Nav from "./Nav";
 import Sidebar from "./Sidebar";
 
 const Layout = ({ children, title, description }) => (
-  <Box w="100%" padding={3}>
+  <Box w="100%">
     <NextSeo title={title} description={description} />
     <Nav />
     {/* Every components will be rendered inside this scope */}
     {children}
     <Sidebar />
+    <Box>Copyright 2022 AERONAVY</Box>
   </Box>
 );
 

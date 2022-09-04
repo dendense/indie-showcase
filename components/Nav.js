@@ -1,12 +1,25 @@
 import * as React from "react";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, SimpleGrid, Text, Flex, Button, HStack } from "@chakra-ui/react";
 
-const Nav = () => (
-  <Box>
-    <Text className="brand" fontSize="3xl">
-      AERO<b>NAVY</b>
-    </Text>
-  </Box>
-);
+// Local Components
+import Brand from "../components/Brand";
 
-export default Nav;
+const CTA = "Order Now";
+
+export default function Nav() {
+  return (
+    <Flex w="100%" px="6" py="6" align="center" justify="space-between">
+      <Box as="button">
+        <Brand linkto="/" />
+      </Box>
+      <HStack>
+        <Box as="Button">Catalog</Box>
+        <Box as="Button">About</Box>
+        <Box as="Button">Contact</Box>
+      </HStack>
+      <HStack>
+        <Button colorScheme="blue">{CTA}</Button>
+      </HStack>
+    </Flex>
+  );
+}

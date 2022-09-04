@@ -9,6 +9,7 @@ specifiers:
   '@emotion/react': ^11.10.0
   '@emotion/styled': ^11.10.0
   '@popperjs/core': ^2.11.6
+  '@sanity/cli': ^2.30.6
   framer-motion: ^7.2.0
   next: ^12.2.5
   next-seo: ^5.5.0
@@ -28,6 +29,7 @@ dependencies:
   '@emotion/react': 11.10.0_byq7oc57qftat37gkdlgphtura
   '@emotion/styled': 11.10.0_oomnx7ap4ibezxcccjc36aeoh4
   '@popperjs/core': 2.11.6
+  '@sanity/cli': 2.30.6
   framer-motion: 7.2.0_biqbaboplfbrettd7655fr4n2y
   next: 12.2.5_n4jygvn2hj75s7kw7xng46hwly
   next-seo: 5.5.0_3xcjr4wz26biff45sz3jtokgje
@@ -1487,6 +1489,12 @@ packages:
 
   /@popperjs/core/2.11.6:
     resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
+    dev: false
+
+  /@sanity/cli/2.30.6:
+    resolution: {integrity: sha512-YkVWTXF3FlIZMhs5bzwqppC+MlRtr3n3WW96LAgQxrvTNO1/9PFIN1zb8jL40PtxGEDDMTdin+eJaHuilZjCGQ==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
     dev: false
 
   /@swc/helpers/0.4.3:
