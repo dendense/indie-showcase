@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 // Importing Local Components
 import Nav from "./Nav";
 import Sidebar from "./Sidebar";
+import Footer from "./Footer";
 
 const Layout = ({ children, title, description }) => (
   <Box w="100%">
@@ -14,7 +15,7 @@ const Layout = ({ children, title, description }) => (
     {/* Every components will be rendered inside this scope */}
     {children}
     <Sidebar />
-    <Box>Copyright 2022 AERONAVY</Box>
+    <Footer />
   </Box>
 );
 

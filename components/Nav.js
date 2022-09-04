@@ -8,7 +8,7 @@ const CTA = "Order Now";
 
 export default function Nav() {
   return (
-    <Flex w="100%" px="6" py="6" align="center" justify="space-between">
+    <Flex w="100%" px="6" py="3" align="center" justify="space-between">
       <Box as="button">
         <Brand linkto="/" />
       </Box>
