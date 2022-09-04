@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Box } from "@chakra-ui/react";
 
 // Importing Local Components
 import Layout from "../components/Layout";
@@ -8,7 +9,7 @@ export default function Index() {
   return (
     <Layout title="AERONAVY" description="A Very Indie Showcase">
       <BigScreen />
-      <div>Hello World!</div>
+      <Box>VISIT OUR CAFE</Box>
     </Layout>
   );
 }
