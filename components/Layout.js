@@ -9,7 +9,7 @@ import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 
 const Layout = ({ children, title, description, showBar }) => (
-  <Box w="100%">
+  <Box w="100%" h="0">
     <NextSeo title={title} description={description} />
     <Nav />
     {/* Every components will be rendered inside this scope */}
