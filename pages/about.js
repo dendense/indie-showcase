@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Text, Flex, Box, AspectRatio } from "@chakra-ui/react";
+import { Text, Flex, AspectRatio } from "@chakra-ui/react";
 
 // Importing Local Components
 import Layout from "../components/Layout";

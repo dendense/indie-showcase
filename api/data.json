@@ -1,0 +1,11 @@
+{
+  "featured": [
+    {
+      "id": 1,
+      "title": "Featured",
+      "image": "/cover1.jpg",
+      "link": "/product",
+      "context": "Top Ten Products  of the Week"
+    }
+  ]
+}

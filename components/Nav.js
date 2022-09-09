@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Spacer, Flex, Button, HStack } from "@chakra-ui/react";
+import { Box, Flex, Button, HStack } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
 // Local Components
@@ -12,18 +12,20 @@ export default function Nav() {
   return (
     <Flex>
       <Flex w="100%" align="center" px="6" py="3">
-        <Box as="Button">
+        <Box as="button">
           <Brand linkto="/" />
         </Box>
         <HStack spacing="20px" ml={20}>
-          <Box as="Button">
+          <Box as="button">
             Catalog
             <ChevronDownIcon w={5} h={5} />
           </Box>
-          <Box as="Button">
+          <Box as="button">
             <Link href="/about">About</Link>
           </Box>
-          <Box as="Button">Contact</Box>
+          <Box as="button">
+            <Link href="/contact">Contact</Link>
+          </Box>
         </HStack>
       </Flex>
       <Button
