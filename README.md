@@ -12,4 +12,4 @@ Dalam tujuan utamanya Indie Showcase ini nantinya berguna bagi para pengusaha gu
 
 Disini kami menggunakan PNPM package manager untuk melakukan instalasi paket pendukung dikarenakan kinerja dan penyimpanan yang lebih ringan
 
-## Progress 5%
+## Progress 20%
