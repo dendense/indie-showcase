@@ -4,6 +4,7 @@ import { Text, Flex, AspectRatio } from "@chakra-ui/react";
 // Importing Local Components
 import Layout from "../components/Layout";
 import BigScreen from "../components/BigScreen";
+import Divider from "../components/Divider";
 
 export default function About() {
   return (
@@ -13,11 +14,7 @@ export default function About() {
       sidebar="no"
     >
       <BigScreen />
-      <Flex align="center" justify="center" height="70px">
-        <Text className="brand">
-          <b>OUR STORE</b>
-        </Text>
-      </Flex>
+      <Divider title="OUR STORE" />
       <AspectRatio maxHeight="400px" ratio={16 / 9}>
         <iframe
           src="https://maps.google.com/maps?q=Unikom&t=&z=17&ie=UTF8&iwloc=&output=embed"

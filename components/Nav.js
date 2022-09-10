@@ -29,12 +29,12 @@ export default function Nav() {
         </HStack>
       </Flex>
       <Button
-        bgColor="#333333"
+        bgColor="#ffc30c"
         colorScheme="yellow"
         borderRadius={0}
         width="10%"
         py="9"
-        textColor="white"
+        textColor="black"
       >
         {CTA}
       </Button>
