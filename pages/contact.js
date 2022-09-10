@@ -4,16 +4,13 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 // Importing Local Component
 import Layout from "../components/Layout";
 import BigScreen from "../components/BigScreen";
+import Divider from "../components/Divider";
 
 export default function Contact() {
   return (
-    <Layout title="CONTACT | AERONAVY" description="Contact Us!" sidebar="yes">
+    <Layout title="CONTACT | AERONAVY" description="Contact Us!" sidebar="no">
       <BigScreen />
-      <Flex align="center" justify="center" height="70px">
-        <Text className="brand">
-          <b>CONTACT US</b>
-        </Text>
-      </Flex>
+      <Divider title="CONTACT US" />
     </Layout>
   );
 }
