@@ -21,5 +21,22 @@
       "link": "/product",
       "context": "Top Ten Products  of the Week"
     }
+  ],
+
+  "franchise": [
+    {
+      "id": 1,
+      "title": "Featured",
+      "image": "/cover4.jpg",
+      "link": "/product",
+      "context": "Top Ten Products  of the Week"
+    },
+    {
+      "id": 2,
+      "title": "Featured",
+      "image": "/cover5.jpg",
+      "link": "/product",
+      "context": "Top Ten Products  of the Week"
+    }
   ]
 }
