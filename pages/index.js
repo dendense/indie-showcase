@@ -13,7 +13,7 @@ export default function Index() {
     <Layout title="AERONAVY" description="A Very Indie Showcase" showBar="no">
       <Carousel />
       <Featured spacing="30px" height="500px" width="366px" />
-      <Divider title="CHECK THIS OUT" color="gray.100" />
+      <Divider title="CHECK THIS OUT" base="#2B2B2B" color="white" />
       <Franchise />
     </Layout>
   );
