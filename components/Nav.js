@@ -1,5 +1,14 @@
 import * as React from "react";
-import { Box, Flex, Button, HStack } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Button,
+  HStack,
+  Menu,
+  MenuList,
+  MenuItem,
+  MenuButton,
+} from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
 // Local Components
@@ -16,10 +25,18 @@ export default function Nav() {
           <Brand linkto="/" />
         </Box>
         <HStack spacing="20px" ml={20}>
-          <Box as="button">
-            Catalog
-            <ChevronDownIcon w={5} h={5} />
-          </Box>
+          <Menu>
+            <MenuButton>
+              Catalog
+              <ChevronDownIcon w={5} h={5} />
+            </MenuButton>
+            <MenuList>
+              <MenuItem>Men's Bag</MenuItem>
+              <MenuItem>T-Shirt</MenuItem>
+              <MenuItem>Hoodie</MenuItem>
+              <MenuItem>Hat</MenuItem>
+            </MenuList>
+          </Menu>
           <Box as="button">
             <Link href="/about">About</Link>
           </Box>
