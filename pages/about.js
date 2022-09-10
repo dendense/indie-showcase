@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Text, Flex, AspectRatio } from "@chakra-ui/react";
+import { Text, Flex, AspectRatio, Box } from "@chakra-ui/react";
 
 // Importing Local Components
 import Layout from "../components/Layout";
@@ -15,12 +15,14 @@ export default function About() {
     >
       <BigScreen />
       <Divider title="OUR STORE" />
-      <AspectRatio maxHeight="400px" ratio={16 / 9}>
+      <Box align="center" justify="center" maxHeight="400px">
         <iframe
           src="https://maps.google.com/maps?q=Unikom&t=&z=17&ie=UTF8&iwloc=&output=embed"
           alt="Our Store"
+          width="100%"
+          height="400px"
         />
-      </AspectRatio>
+      </Box>
     </Layout>
   );
 }

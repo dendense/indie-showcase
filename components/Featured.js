@@ -1,13 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
-import {
-  Box,
-  Center,
-  Wrap,
-  WrapItem,
-  Container,
-  Button,
-} from "@chakra-ui/react";
+import { Center, Wrap, WrapItem, Button } from "@chakra-ui/react";
 
 // Importing Dummy Data
 import showData from "../api/data.json";
