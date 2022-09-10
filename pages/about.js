@@ -17,7 +17,7 @@ export default function About() {
       <Divider title="OUR STORE" />
       <Box align="center" justify="center" maxHeight="400px">
         <iframe
-          src="https://maps.google.com/maps?q=Unikom&t=&z=17&ie=UTF8&iwloc=&output=embed"
+          src="https://maps.google.com/maps?q=Unikom&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
           alt="Our Store"
           width="100%"
           height="400px"
