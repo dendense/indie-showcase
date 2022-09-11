@@ -13,14 +13,14 @@ export default function About() {
       description="A Little Things About Us"
       sidebar="no"
     >
-      <BigScreen />
+      <BigScreen punchline="Here's Little Things About Us!" />
       <Divider title="OUR STORE" />
-      <Box align="center" justify="center" maxHeight="400px">
+      <Box align="center" justify="center" maxHeight="500px">
         <iframe
           src="https://maps.google.com/maps?q=Unikom&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
           alt="Our Store"
           width="100%"
-          height="400px"
+          height="500px"
         />
       </Box>
     </Layout>
