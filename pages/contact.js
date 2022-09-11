@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Box, Flex, Text, Image } from "@chakra-ui/react";
+import Link from "next/link";
+import { Box, Flex, Text, Image, Button } from "@chakra-ui/react";
 
 // Importing Local Component
 import Layout from "../components/Layout";
@@ -19,11 +20,19 @@ export default function Contact() {
           <Text className="brand" fontSize="3xl">
             <b>Get in touch today!</b>
           </Text>
-          <p className="brand">
-            <b>Phone : +6289698526236</b>
+          <Text className="brand">
+            <b>Phone :</b>
             <br />
-            <b>Email : ytaiki48@gmail.com</b>
-          </p>
+            <Button colorScheme="green">
+              <Link href="http://wa.me/089698526236">Whatsapp</Link>
+            </Button>
+            <br />
+            <b>Email :</b>
+            <br />
+            <Button bgColor="#ffc30c">
+              <Link href="mailto:ytaiki48@gmail.com">ytaiki48@gmail.com</Link>
+            </Button>
+          </Text>
         </Box>
       </Flex>
       <Divider title="VISIT OUR STORE" base="#2B2B2B" color="white" />

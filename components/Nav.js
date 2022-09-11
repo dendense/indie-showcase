@@ -1,4 +1,5 @@
 import * as React from "react";
+import Link from "next/link";
 import {
   Box,
   Flex,
@@ -13,7 +14,6 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 
 // Local Components
 import Brand from "../components/Brand";
-import Link from "next/link";
 
 const CTA = "SHOP";
 
