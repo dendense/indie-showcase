@@ -27,7 +27,7 @@ export default function Nav() {
         <HStack spacing="20px" ml={20}>
           <Menu>
             <MenuButton>
-              Catalog
+              Catalogue
               <ChevronDownIcon w={5} h={5} />
             </MenuButton>
             <MenuList>
