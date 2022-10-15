@@ -38,5 +38,36 @@
       "link": "/product",
       "context": "Top Ten Products  of the Week"
     }
+  ],
+
+  "navItem": [
+    {
+      "label": "Catalogue",
+      "children": [
+        {
+          "label": "Accessories",
+          "subLabel": "Trending Design to inspire you",
+          "href": "#"
+        },
+        {
+          "label": "Shirts",
+          "subLabel": "Up-and-coming Designers",
+          "href": "#"
+        },
+        {
+          "label": "Outwears",
+          "subLabel": "Up-and-coming Designers",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "label": "About",
+      "href": "#"
+    },
+    {
+      "label": "Contact",
+      "href": "#"
+    }
   ]
 }
