@@ -16,33 +16,6 @@ export default function Accessories({ products }) {
       showBar="no"
     >
       <Carousel />
-      <SimpleGrid columns={[2, null, 3]} spacing="20px">
-        {products.map((product) => {
-          const { defaultProductVariant = {} } = product;
-          const { images } = defaultProductVariant;
-          return (
-            <Box bg="tomato" key={product._id}>
-              <Box boxSize="sm">
-                <Image
-                  src={builder.image(images[0]).width(300)}
-                  alt={product.title}
-                />
-              </Box>
-              <Text as="b">{product.title}</Text>
-              <p>{product.blurb.en}</p>
-            </Box>
-          );
-        })}
-      </SimpleGrid>
     </Layout>
   );
-}
-
-export async function getStaticProps() {
-  const products = await client.fetch(`*[_type == "product"]`);
-  return {
-    props: {
-      products,
-    },
-  };
 }
