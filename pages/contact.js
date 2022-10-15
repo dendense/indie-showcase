@@ -24,7 +24,7 @@ export default function Contact() {
             <b>Phone :</b>
             <br />
             <Button colorScheme="green">
-              <Link href="http://wa.me/089698526236" target="_blank">
+              <Link href="http://wa.me/085171060046" target="_blank">
                 Whatsapp
               </Link>
             </Button>
@@ -32,7 +32,9 @@ export default function Contact() {
             <b>Email :</b>
             <br />
             <Button bgColor="#ffc30c">
-              <Link href="mailto:ytaiki48@gmail.com">ytaiki48@gmail.com</Link>
+              <Link href="mailto:aeronavyofficial@gmail.com">
+                aeronavyofficial@gmail.com
+              </Link>
             </Button>
           </Text>
         </Box>
