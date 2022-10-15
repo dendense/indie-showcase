@@ -3,3 +3,8 @@
 .brand {
   font-family: "Raleway", sans-serif;
 }
+@media (max-width: 800px) {
+  .SmallScreen {
+    text-align: center;
+  }
+}

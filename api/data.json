@@ -52,7 +52,7 @@
         {
           "label": "Shirts",
           "subLabel": "Up-and-coming Designers",
-          "href": "#"
+          "href": "/shirts"
         },
         {
           "label": "Outwears",
@@ -63,11 +63,11 @@
     },
     {
       "label": "About",
-      "href": "#"
+      "href": "/about"
     },
     {
       "label": "Contact",
-      "href": "#"
+      "href": "/contact"
     }
   ]
 }
