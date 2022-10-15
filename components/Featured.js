@@ -12,7 +12,7 @@ export default function Featured() {
       {data.map((i) => (
         <Box key={i.id}>
           <Center backgroundImage={i.image} w="366px" h="500px">
-            <Button>Explore Items</Button>
+            <Button>{i.title}</Button>
           </Center>
         </Box>
       ))}

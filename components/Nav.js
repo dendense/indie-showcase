@@ -31,9 +31,11 @@ export default function Nav() {
               <ChevronDownIcon w={5} h={5} />
             </MenuButton>
             <MenuList>
-              <MenuItem>Men's Bag</MenuItem>
-              <MenuItem>T-Shirt</MenuItem>
-              <MenuItem>Hoodie</MenuItem>
+              <MenuItem>Accessories</MenuItem>
+              <MenuItem>
+                <Link href="/shirts">Shirts</Link>
+              </MenuItem>
+              <MenuItem>Outwear</MenuItem>
               <MenuItem>Hat</MenuItem>
             </MenuList>
           </Menu>
