@@ -1,4 +1,5 @@
 import * as React from "react";
+import Linked from "next/link";
 import {
   Box,
   Flex,
@@ -99,16 +100,19 @@ const DesktopNav = () => {
               <Button
                 colorScheme="white"
                 p={2}
-                href={navItem.href ?? "#"}
                 fontSize={"md"}
                 fontWeight={500}
                 color={linkColor}
                 _hover={{
-                  textDecoration: "none",
                   color: linkHoverColor,
                 }}
               >
-                {navItem.label}
+                <Linked
+                  href={navItem.href ?? "#"}
+                  _hover={{ textDecoration: "none" }}
+                >
+                  {navItem.label}
+                </Linked>
               </Button>
             </PopoverTrigger>
 
