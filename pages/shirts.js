@@ -1,14 +1,12 @@
 import * as React from "react";
-import imageUrlBuilder from "@sanity/image-url";
-import { Box, SimpleGrid, Text, Image } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 // Import Local Components
-import { client } from "../lib/sanity";
 import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
+import PostCards from "../components/PostCard";
 
-const builder = imageUrlBuilder(client);
-export default function Shirts({ products }) {
+export default function Shirts() {
   return (
     <Layout
       title="SHIRTS | AERONAVY"
@@ -16,33 +14,9 @@ export default function Shirts({ products }) {
       showBar="no"
     >
       <Carousel />
-      <SimpleGrid columns={[2, null, 3]} spacing="20px">
-        {products.map((product) => {
-          const { defaultProductVariant = {} } = product;
-          const { images } = defaultProductVariant;
-          return (
-            <Box bg="tomato" key={product._id}>
-              <Box boxSize="sm">
-                <Image
-                  src={builder.image(images[0]).width(300)}
-                  alt={product.title}
-                />
-              </Box>
-              <Text as="b">{product.title}</Text>
-              <p>{product.blurb.en}</p>
-            </Box>
-          );
-        })}
-      </SimpleGrid>
+      <Box padding="4">
+        <PostCards />
+      </Box>
     </Layout>
   );
-}
-
-export async function getStaticProps() {
-  const products = await client.fetch(`*[_type == "product"]`);
-  return {
-    props: {
-      products,
-    },
-  };
 }
