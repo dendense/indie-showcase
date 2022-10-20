@@ -1,6 +1,5 @@
 import * as React from "react";
 import imageUrlBuilder from "@sanity/image-url";
-import { Box, SimpleGrid, Text, Image } from "@chakra-ui/react";
 
 // Import Local Components
 import { client } from "../lib/sanity";
