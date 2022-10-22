@@ -47,6 +47,30 @@
       "price": "Rp. 120,000,00",
       "reviewCount": 34,
       "rating": 4
+    },
+    {
+      "id": 3,
+      "title": "Urban Casual Tees",
+      "image": "/cover2.jpg",
+      "link": "/product",
+      "context": "Top Ten Products  of the Week",
+      "beds": 3,
+      "baths": 3,
+      "price": "Rp. 120,000,00",
+      "reviewCount": 34,
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "title": "Urban Casual Tees",
+      "image": "/cover2.jpg",
+      "link": "/product",
+      "context": "Top Ten Products  of the Week",
+      "beds": 3,
+      "baths": 3,
+      "price": "Rp. 120,000,00",
+      "reviewCount": 34,
+      "rating": 4
     }
   ],
 

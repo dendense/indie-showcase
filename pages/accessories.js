@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
 
 const builder = imageUrlBuilder(client);
-export default function Accessories({ products }) {
+export default function Accessories() {
   return (
     <Layout
       title="ACCESSORIES | AERONAVY"

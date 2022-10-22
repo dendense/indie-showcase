@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, Center } from "@chakra-ui/react";
 
 // Import Local Components
 import Layout from "../components/Layout";
