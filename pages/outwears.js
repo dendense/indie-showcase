@@ -1,11 +1,10 @@
 import * as React from "react";
 
 // Import Local Components
-import { client } from "../lib/sanity";
 import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
 
-export default function Outwears({ products }) {
+export default function Outwears() {
   return (
     <Layout
       title="OUTWEARS | AERONAVY"
