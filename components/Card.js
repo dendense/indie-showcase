@@ -1,7 +1,15 @@
 import * as React from "react";
-import { Box, Image, Button } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  Button,
+  Stack,
+  Flex,
+  Heading,
+  Text,
+} from "@chakra-ui/react";
 
-const Card = ({ title, price, image }) => (
+const Card = ({ title, price, image, gender }) => (
   <Box
     borderWidth="1px"
     w="full"
@@ -11,8 +19,21 @@ const Card = ({ title, price, image }) => (
   >
     <Image h="337px" w="full" objectFit="cover" src={image} />
     <Box padding={4}>
-      <Box>{title}</Box>
-      <Box>{price}</Box>
+      <Stack spacing="0">
+        <Flex justifyContent="space-between">
+          <Heading as="h2" fontWeight="bold" fontSize="16px" isTruncated>
+            {title}
+          </Heading>
+          <Text as="span" ml="4">
+            NEW!
+          </Text>
+        </Flex>
+
+        <Flex justifyContent="space-between">
+          <Text as="span">{gender}</Text>
+          <Text as="span">{price}</Text>
+        </Flex>
+      </Stack>
       <Button colorScheme="teal" width="100%" mt={3} size="md">
         See Details
       </Button>
