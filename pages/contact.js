@@ -11,9 +11,9 @@ export default function Contact() {
   return (
     <Layout title="CONTACT | AERONAVY" description="Contact Us!" sidebar="no">
       <BigScreen punchline="We focus on ergonomics and meeting you were you work." />
-      <Flex gap={10} p={10} alignItems="center" justifyContent="center">
-        <Image src="./Logo.jpg" maxW="400px" />
-        <Box>
+      <Box padding="4" display="flex">
+        <Image src="./Logo.jpg" rounded="lg" w="400px" />
+        <Box ml="4">
           <Text className="brand">
             <b>CONTACT US</b>
           </Text>
@@ -36,9 +36,17 @@ export default function Contact() {
                 aeronavyofficial@gmail.com
               </Link>
             </Button>
+            <br />
+            <b>Instagram :</b>
+            <br />
+            <Button bgColor="#E1306C" colorScheme="green">
+              <Link href="https://instagram.com/aero.navy" target="_blank">
+                @aero.navy
+              </Link>
+            </Button>
           </Text>
         </Box>
-      </Flex>
+      </Box>
       <Divider title="VISIT OUR STORE" base="#2B2B2B" color="white" />
       <Box align="center" justify="center" maxHeight="400px">
         <iframe
