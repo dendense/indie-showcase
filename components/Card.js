@@ -17,11 +17,11 @@ const Card = ({ title, price, image, gender }) => (
     shadow="md"
     overflow="hidden"
   >
-    <Image h="337px" w="full" objectFit="cover" src={image} />
+    <Image w="full" objectFit="cover" src={image} />
     <Box padding={4}>
       <Stack spacing="0">
         <Flex justifyContent="space-between">
-          <Heading as="h2" fontWeight="bold" fontSize="16px" isTruncated>
+          <Heading as="h2" fontWeight="bold" fontSize="16px">
             {title}
           </Heading>
           <Text as="span" ml="4">

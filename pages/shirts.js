@@ -6,6 +6,10 @@ import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
 import PostCards from "../components/PostCard";
 
+import showData from "../api/data.json";
+
+const data = showData.cardpost;
+
 export default function Shirts() {
   return (
     <Layout
@@ -15,7 +19,7 @@ export default function Shirts() {
     >
       <Carousel />
       <Box padding="4">
-        <PostCards />
+        <PostCards data={data} />
       </Box>
     </Layout>
   );

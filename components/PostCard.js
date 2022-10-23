@@ -1,12 +1,10 @@
 import * as React from "react";
-import { Flex, Box, SimpleGrid } from "@chakra-ui/react";
+import { SimpleGrid } from "@chakra-ui/react";
 
 // Local Components
 import Card from "../components/Card";
-import showData from "../api/data.json";
 
-const data = showData.cardpost;
-const PostCards = () => (
+const PostCards = ({ data }) => (
   <SimpleGrid columns={{ base: 1, md: 3, lg: 5 }} spacing="10px">
     {data.map((i) => (
       <Card

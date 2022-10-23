@@ -58,7 +58,9 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Brand linkto="/" />
+          <Box as="button">
+            <Brand linkto="/" />
+          </Box>
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
