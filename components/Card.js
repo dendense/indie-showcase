@@ -7,15 +7,17 @@ import {
   Flex,
   Heading,
   Text,
+  Link,
 } from "@chakra-ui/react";
 
-const Card = ({ title, price, image, gender }) => (
+const Card = ({ title, price, image, gender, slug, key }) => (
   <Box
     borderWidth="1px"
     w="full"
     borderRadius="lg"
     shadow="md"
     overflow="hidden"
+    key={key}
   >
     <Image w="full" objectFit="cover" src={image} />
     <Box padding={4}>
@@ -35,7 +37,7 @@ const Card = ({ title, price, image, gender }) => (
         </Flex>
       </Stack>
       <Button colorScheme="teal" width="100%" mt={3} size="md">
-        See Details
+        <Link href={slug}>See Details</Link>
       </Button>
     </Box>
   </Box>

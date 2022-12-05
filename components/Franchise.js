@@ -1,14 +1,10 @@
 import * as React from "react";
-import { Center, Button, Flex, Box } from "@chakra-ui/react";
-
-// Importing Dummy Data
-import showData from "../api/data.json";
+import { Box } from "@chakra-ui/react";
 
 // Importing Local Components
 import PostCard from "../components/PostCard";
 
-export default function Franchise() {
-  const data = showData.franchise;
+export default function Franchise({ data }) {
   return (
     <Box padding="4">
       <PostCard data={data} />
