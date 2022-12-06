@@ -5,21 +5,21 @@
       "title": "Shirts",
       "image": "/cover1.jpg",
       "link": "/product",
-      "context": "Top Ten Products  of the Week"
+      "context": "Top 10 Shirts of the Week"
     },
     {
       "id": 2,
       "title": "Outwear",
       "image": "/cover2.jpg",
       "link": "/product",
-      "context": "Top Ten Products  of the Week"
+      "context": "Top 10 Outwears of the Week"
     },
     {
       "id": 3,
       "title": "Accessories",
       "image": "/cover3.png",
       "link": "/product",
-      "context": "Top Ten Products  of the Week"
+      "context": "Top 10 Accessories of the Week"
     }
   ],
 
@@ -97,17 +97,17 @@
       "children": [
         {
           "label": "Accessories",
-          "subLabel": "Trending Design to inspire you",
+          "subLabel": "Explore Accessories Collection",
           "href": "#"
         },
         {
           "label": "Shirts",
-          "subLabel": "Up-and-coming Designers",
+          "subLabel": "Explore Shirts Collection",
           "href": "/shirts"
         },
         {
           "label": "Outwears",
-          "subLabel": "Up-and-coming Designers",
+          "subLabel": "Explore Outwears Collection",
           "href": "#"
         }
       ]

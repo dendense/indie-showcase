@@ -1,6 +1,6 @@
 ---
-title: "This is an example post 2"
-gender: "Male"
+title: "Suzume Stripe"
+gender: "Unisex"
 category: "T-Shirt"
 date: "2022-03-13"
 bannerImage: "https://i.ibb.co/nc688XB/2.png"

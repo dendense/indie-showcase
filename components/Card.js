@@ -29,7 +29,6 @@ const Card = ({ title, price, image, gender, slug }) => (
             NEW!
           </Text>
         </Flex>
-
         <Flex justifyContent="space-between">
           <Text as="span">{gender}</Text>
           <Text as="span">{price}</Text>

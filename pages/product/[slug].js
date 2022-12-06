@@ -3,32 +3,36 @@ import Link from "next/link";
 import fs from "fs";
 import matter from "gray-matter";
 import md from "markdown-it";
-import { Box, Flex, Text, Image, Button } from "@chakra-ui/react";
+import { Box, Flex, Text, Heading, Image, Button } from "@chakra-ui/react";
 
 // Importing Local Component
 import Layout from "../../components/Layout";
-import BigScreen from "../../components/BigScreen";
 import Divider from "../../components/Divider";
+import Franchise from "../../components/Franchise";
 
-export default function Posts({ frontmatter, content }) {
+export default function Posts({ frontmatter, content, posts }) {
   const { title, gender, category, price, bannerImage, tags } = frontmatter;
   return (
-    <Layout title="CONTACT | AERONAVY" description="Contact Us!">
-      <BigScreen punchline="We focus on ergonomics and meeting you were you work." />
+    <Layout title={title + " | AERONAVY"} description="Contact Us!">
       <Box padding="4" ml="10" mr="10" display="flex" justifyContent="center">
         <Image src={bannerImage} rounded="lg" w="400px" />
-        <Box ml="4">
-          <h1>{title}</h1>
-          <h1>{gender}</h1>
-          <h1>{category}</h1>
+        <Box ml="10" mt="10">
+          <Heading>{title}</Heading>
+          <Text
+            as="div"
+            fontSize="xl"
+            dangerouslySetInnerHTML={{ __html: md().render(content) }}
+          />
+          <Text mt="5">
+            {gender} - {category}
+          </Text>
           <h1>{price}</h1>
           <h1>{tags}</h1>
-          <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
         </Box>
       </Box>
       <Divider title="VISIT OUR STORE" base="#2B2B2B" color="white" />
-      <Box align="center" justify="center" maxHeight="400px">
-        {/* */}
+      <Box align="center" justify="center">
+        <Franchise data={posts} />
       </Box>
     </Layout>
   );
@@ -44,6 +48,7 @@ export async function getStaticPaths() {
       slug: fileName.replace(".md", ""),
     },
   }));
+
   // return list of paths
   return {
     paths,
@@ -55,10 +60,27 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params: { slug } }) {
   const fileName = fs.readFileSync(`content/posts/${slug}.md`, "utf-8");
   const { data: frontmatter, content } = matter(fileName);
+
+  // get list of files from the posts folder
+  const files = fs.readdirSync("content/posts");
+
+  // get frontmatter & slug from each post
+  const posts = files.map((fileName) => {
+    const slug = fileName.replace(".md", "");
+    const readFile = fs.readFileSync(`content/posts/${fileName}`, "utf-8");
+    const { data: frontmatter } = matter(readFile);
+
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+
   return {
     props: {
       frontmatter,
       content,
+      posts,
     },
   };
 }

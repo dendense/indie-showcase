@@ -13,7 +13,7 @@ const PostCards = ({ data }) => (
       const { title, gender, category, price, bannerImage } = frontmatter;
       return (
         <Card
-          slug={`/posts/${slug}`}
+          slug={`/product/${slug}`}
           key={title}
           title={title}
           image={bannerImage}
