@@ -10,7 +10,7 @@ const PostCards = ({ data }) => (
       //extract slug and frontmatter
       const { slug, frontmatter } = post;
       //extract frontmatter properties
-      const { title, gender, category, price, bannerImage, tags } = frontmatter;
+      const { title, gender, category, price, bannerImage } = frontmatter;
       return (
         <Card
           slug={`/posts/${slug}`}
@@ -19,6 +19,7 @@ const PostCards = ({ data }) => (
           image={bannerImage}
           price={price}
           gender={gender}
+          category={category}
         />
       );
     })}

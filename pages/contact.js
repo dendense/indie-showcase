@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <Layout title="CONTACT | AERONAVY" description="Contact Us!" sidebar="no">
       <BigScreen punchline="We focus on ergonomics and meeting you were you work." />
-      <Box padding="4" display="flex">
+      <Box padding="4" display="flex" justifyContent="center">
         <Image src="./Logo.jpg" rounded="lg" w="400px" />
         <Box ml="4">
           <Text className="brand">
@@ -24,25 +24,25 @@ export default function Contact() {
             <b>Phone :</b>
             <br />
             <Button colorScheme="green">
-              <Link href="http://wa.me/085171060046" target="_blank">
+              <a href="http://wa.me/085171060046" target="_blank">
                 Whatsapp
-              </Link>
+              </a>
             </Button>
             <br />
             <b>Email :</b>
             <br />
             <Button bgColor="#ffc30c">
-              <Link href="mailto:aeronavyofficial@gmail.com">
+              <a href="mailto:aeronavyofficial@gmail.com" target="_blank">
                 aeronavyofficial@gmail.com
-              </Link>
+              </a>
             </Button>
             <br />
             <b>Instagram :</b>
             <br />
             <Button bgColor="#E1306C" colorScheme="green">
-              <Link href="https://instagram.com/aero.navy" target="_blank">
+              <a href="https://instagram.com/aero.navy" target="_blank">
                 @aero.navy
-              </Link>
+              </a>
             </Button>
           </Text>
         </Box>

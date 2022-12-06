@@ -4,10 +4,10 @@ import { Box } from "@chakra-ui/react";
 // Importing Local Components
 import PostCard from "../components/PostCard";
 
-export default function Franchise({ data }) {
+export default function Franchise({ data, category }) {
   return (
     <Box padding="4">
-      <PostCard data={data} />
+      <PostCard data={data} category={category} />
     </Box>
   );
 }

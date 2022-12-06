@@ -1,9 +1,9 @@
 ---
 title: "This is an example post 2"
 gender: "Male"
-category: "example2"
+category: "T-Shirt"
 date: "2022-03-13"
-bannerImage: "https://i.ibb.co/FxQWGNy/2.png"
+bannerImage: "https://i.ibb.co/nc688XB/2.png"
 price: "Rp.150.000,00"
 tags:
   - example2
