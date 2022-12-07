@@ -1,12 +1,26 @@
 // Import CakraUI Provider
 import { ChakraProvider } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
+import Script from "next/script";
 // Custom SASS
 import "../styles/index.scss";
 
 function ShowcaseApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-E59DL31NXF"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-E59DL31NXF');
+        `}
+      </Script>
       <NextSeo
         title="AERONAVY"
         titleTemplate="AERONAVY"
