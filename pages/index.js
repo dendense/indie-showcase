@@ -11,7 +11,11 @@ import Divider from "../components/Divider";
 
 export default function Index({ posts }) {
   return (
-    <Layout title="AERONAVY" description="A Very Indie Showcase" showBar="no">
+    <Layout
+      title="AERONAVY"
+      description="Proudly Indonesian Craftmanship Apparel"
+      showBar="no"
+    >
       <Carousel />
       <Divider title="WELCOME TO AERONAVY" base="#ffc30c" color="black" />
       <Featured data={posts} spacing="30px" height="500px" width="366px" />
