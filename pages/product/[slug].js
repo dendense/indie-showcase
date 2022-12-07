@@ -13,7 +13,7 @@ import Franchise from "../../components/Franchise";
 export default function Posts({ frontmatter, content, posts }) {
   const { title, gender, category, price, bannerImage, tags } = frontmatter;
   return (
-    <Layout title={title + " | AERONAVY"} description="Contact Us!">
+    <Layout title={title + " | AERONAVY"} description={title + " | Product"}>
       <Box padding="4" ml="10" mr="10" display="flex" justifyContent="center">
         <Image src={bannerImage} rounded="lg" w="400px" />
         <Box ml="10" mt="10">
