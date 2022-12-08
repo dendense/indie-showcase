@@ -30,7 +30,7 @@ export default function Posts({ frontmatter, content, posts }) {
           <h1>{tags}</h1>
         </Box>
       </Box>
-      <Divider title="VISIT OUR STORE" base="#2B2B2B" color="white" />
+      <Divider title="EXPLORE PRODUCTS" base="#2B2B2B" color="white" />
       <Box align="center" justify="center">
         <Franchise data={posts} />
       </Box>

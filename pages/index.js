@@ -14,7 +14,6 @@ export default function Index({ posts }) {
     <Layout
       title="AERONAVY"
       description="Proudly Indonesian Craftmanship Apparel"
-      showBar="no"
     >
       <Carousel />
       <Divider title="WELCOME TO AERONAVY" base="#ffc30c" color="black" />
