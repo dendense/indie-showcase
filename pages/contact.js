@@ -1,6 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
-import { Box, Flex, Text, Image, Button } from "@chakra-ui/react";
+import { Box, SimpleGrid, Text, Image, Button } from "@chakra-ui/react";
 
 // Importing Local Component
 import Layout from "../components/Layout";
@@ -11,9 +11,9 @@ export default function Contact() {
   return (
     <Layout title="CONTACT | AERONAVY" description="Contact Us!" sidebar="no">
       <BigScreen punchline="We focus on ergonomics and meeting you were you work." />
-      <Box padding="4" display="flex" justifyContent="center">
+      <SimpleGrid padding="10" columns={{ base: 1, md: 2, lg: 4 }}>
         <Image src="./Logo.jpg" rounded="lg" w="400px" />
-        <Box ml="4">
+        <Box padding="4">
           <Text className="brand">
             <b>CONTACT US</b>
           </Text>
@@ -46,7 +46,7 @@ export default function Contact() {
             </Button>
           </Text>
         </Box>
-      </Box>
+      </SimpleGrid>
       <Divider title="VISIT OUR STORE" base="#2B2B2B" color="white" />
       <Box align="center" justify="center" maxHeight="400px">
         <iframe

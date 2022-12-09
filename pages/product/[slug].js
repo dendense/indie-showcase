@@ -1,9 +1,17 @@
 import * as React from "react";
-import Link from "next/link";
 import fs from "fs";
 import matter from "gray-matter";
 import md from "markdown-it";
-import { Box, Flex, Text, Heading, Image, Button } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Heading,
+  Image,
+  Button,
+  Badge,
+  SimpleGrid,
+  Link,
+} from "@chakra-ui/react";
 
 // Importing Local Component
 import Layout from "../../components/Layout";
@@ -11,7 +19,16 @@ import Divider from "../../components/Divider";
 import Franchise from "../../components/Franchise";
 
 export default function Posts({ frontmatter, content, posts }) {
-  const { title, gender, category, price, bannerImage, tags } = frontmatter;
+  const {
+    title,
+    gender,
+    category,
+    shopee,
+    tokopedia,
+    price,
+    bannerImage,
+    tags,
+  } = frontmatter;
   return (
     <Layout title={title + " | AERONAVY"} description={title + " | Product"}>
       <Box padding="4" ml="10" mr="10" display="flex" justifyContent="center">
@@ -24,10 +41,24 @@ export default function Posts({ frontmatter, content, posts }) {
             dangerouslySetInnerHTML={{ __html: md().render(content) }}
           />
           <Text mt="5">
-            {gender} - {category}
+            {gender} | {category}
           </Text>
-          <h1>{price}</h1>
-          <h1>{tags}</h1>
+          <Text fontSize="3xl">{price}</Text>
+          <SimpleGrid columns={{ base: 1, md: 2, lg: 5 }} spacing="10px">
+            <Button colorScheme="orange" size="md">
+              <Link href={shopee} target="_blank">
+                Shopee
+              </Link>
+            </Button>
+            <Button colorScheme="green" size="md">
+              <Link href={tokopedia} target="_blank" _disabled="yes">
+                Tokopedia
+              </Link>
+            </Button>
+          </SimpleGrid>
+          <Badge borderRadius="full" px="2" colorScheme="teal">
+            {tags}
+          </Badge>
         </Box>
       </Box>
       <Divider title="EXPLORE PRODUCTS" base="#2B2B2B" color="white" />

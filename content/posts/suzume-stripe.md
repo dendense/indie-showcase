@@ -5,6 +5,8 @@ category: "T-Shirt"
 date: "07/12/2022"
 bannerImage: "https://i.ibb.co/nc688XB/2.png"
 price: "Rp.100.000,00"
+shopee: "https://shopee.co.id"
+tokopedia: "https://tokopedia.com"
 tags:
   - Artisans
   - Japan

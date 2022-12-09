@@ -5,10 +5,12 @@ category: "T-Shirt"
 date: "08/12/2022"
 bannerImage: "https://i.ibb.co/zrKFLC8/7.png"
 price: "Rp.100.000,00"
+shopee: "https://shopee.co.id"
+tokopedia: "https://tokopedia.com"
 tags:
   - Casual
 ---
 
 ## Enough Internet for Today
 
-Suzume adalah salah satu karakter pada film Suzume no Tojimari garapan seorang maestro Makoto Shinkai, film ini menceritakan tentang seorang gadis bernama Suzume yang tak sengaja menemukan pintu tua dalam bangunan terbengkalai di sebuah gunung. Diketahui Suzume tinggal di Kota Kyushu yang kondisinya begitu tenang. Kemudian ia bertemu seorang lelaki yang tengah melakukan perjalanan.
+Pernah gak sih lo capek banget sama konten-konten aneh yang muncul di layar hape dan rasanya kaya uuugghh sehari aja engga ada konten yang ngadi-ngadi muncul di layar hape lo, baju ini bantu lo dan temen lo ngingetin kalau Cukup Pantengin Layar Hape Lo untuk hari ini ajaaa, let's go outside and ngopi-ngopi sometimes.
