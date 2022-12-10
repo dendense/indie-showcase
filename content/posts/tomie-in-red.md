@@ -12,6 +12,4 @@ tags:
   - Japan
 ---
 
-## Tomie in Red
-
-Tomie Kawakami, seorang gadis cantik muda yang diidentifikasi melalui tahi lalat di bawah mata kirinya, yang mendorong dia menjadi gila, dan menyebabkan kematian. Namun karena kemampuannya melakukan regenerasi, dia dapat hidup kembali untuk menakut-nakuti pembunuhnya. Tomie dibintangi oleh aktris berbeda setiap film. 
+Tomie Kawakami, seorang gadis cantik muda yang diidentifikasi melalui tahi lalat di bawah mata kirinya, yang mendorong dia menjadi gila, dan menyebabkan kematian. Namun karena kemampuannya melakukan regenerasi, dia dapat hidup kembali untuk menakut-nakuti pembunuhnya. Tomie dibintangi oleh aktris berbeda setiap film.

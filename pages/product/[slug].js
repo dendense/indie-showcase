@@ -33,7 +33,7 @@ export default function Posts({ frontmatter, content, posts }) {
     <Layout title={title + " | AERONAVY"} description={title + " | Product"}>
       <Box padding="4" ml="10" mr="10" display="flex" justifyContent="center">
         <Image src={bannerImage} rounded="lg" w="400px" />
-        <Box ml="10" mt="10">
+        <Box ml="10" mt="5">
           <Heading>{title}</Heading>
           <Text
             as="div"
@@ -62,7 +62,7 @@ export default function Posts({ frontmatter, content, posts }) {
         </Box>
       </Box>
       <Divider title="EXPLORE PRODUCTS" base="#2B2B2B" color="white" />
-      <Box align="center" justify="center">
+      <Box align="center" justify="center" p="10">
         <Franchise data={posts} />
       </Box>
     </Layout>

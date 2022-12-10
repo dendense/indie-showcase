@@ -11,6 +11,4 @@ tags:
   - Casual
 ---
 
-## Enough Internet for Today
-
 Pernah gak sih lo capek banget sama konten-konten aneh yang muncul di layar hape dan rasanya kaya uuugghh sehari aja engga ada konten yang ngadi-ngadi muncul di layar hape lo, baju ini bantu lo dan temen lo ngingetin kalau Cukup Pantengin Layar Hape Lo untuk hari ini ajaaa, let's go outside and ngopi-ngopi sometimes.
