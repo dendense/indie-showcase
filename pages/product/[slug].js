@@ -11,7 +11,6 @@ import {
   Badge,
   SimpleGrid,
   Link,
-  HStack,
 } from "@chakra-ui/react";
 
 // Importing Local Component
@@ -32,9 +31,16 @@ export default function Posts({ frontmatter, content, posts }) {
   } = frontmatter;
   return (
     <Layout title={title + " | AERONAVY"} description={title + " | Product"}>
-      <SimpleGrid spacing="8" padding="4">
-        <Image src={bannerImage} rounded="lg" w="400px" />
-        <Box>
+      <Box padding="8" display={{ md: "flex" }}>
+        <Box align="center">
+          <Image
+            src={bannerImage}
+            rounded="lg"
+            maxWidth={{ md: "400px" }}
+            maxHeight={{ md: "400px" }}
+          />
+        </Box>
+        <Box padding="5">
           <Heading>{title}</Heading>
           <Text
             as="div"
@@ -57,11 +63,13 @@ export default function Posts({ frontmatter, content, posts }) {
               </Link>
             </Button>
           </SimpleGrid>
-          <Badge borderRadius="full" px="2" colorScheme="teal">
-            {tags}
-          </Badge>
+          {tags.map((tag) => (
+            <Badge borderRadius="full" px="2" colorScheme="teal" mr="1">
+              {tag}
+            </Badge>
+          ))}
         </Box>
-      </SimpleGrid>
+      </Box>
       <Divider title="EXPLORE PRODUCTS" base="#2B2B2B" color="white" />
       <Box align="center" justify="center" p="10">
         <Franchise data={posts} />
