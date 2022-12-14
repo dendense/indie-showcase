@@ -12,6 +12,7 @@ specifiers:
   framer-motion: ^7.6.9
   fs: 0.0.1-security
   gray-matter: ^4.0.3
+  lodash: ^4.17.21
   markdown-it: ^13.0.1
   next: ^12.3.4
   next-seo: ^5.14.1
@@ -35,6 +36,7 @@ dependencies:
   framer-motion: 7.6.9_biqbaboplfbrettd7655fr4n2y
   fs: 0.0.1-security
   gray-matter: 4.0.3
+  lodash: 4.17.21
   markdown-it: 13.0.1
   next: 12.3.4_vgii64pd2ccbnbx2v3ro5gbin4
   next-seo: 5.14.1_bhgafntz2ozm43l35i5qtimxry
@@ -2216,6 +2218,10 @@ packages:
 
   /lodash.mergewith/4.6.2:
     resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
+    dev: false
+
+  /lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: false
 
   /loose-envify/1.4.0:

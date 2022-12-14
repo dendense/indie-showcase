@@ -12,6 +12,10 @@ function ShowcaseApp({ Component, pageProps }) {
         src="https://www.googletagmanager.com/gtag/js?id=G-E59DL31NXF"
         strategy="afterInteractive"
       />
+      <meta
+        name="google-site-verification"
+        content="Wb9YPKzgjKBiteWx39tL_7W8FqSV86S8pCla8QFfz3M"
+      />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
