@@ -8,6 +8,7 @@ import Carousel from "../components/Carousel";
 import Featured from "../components/Featured";
 import Franchise from "../components/Franchise";
 import Divider from "../components/Divider";
+import Info from "../components/Info";
 
 export default function Index({ posts }) {
   return (
@@ -20,6 +21,7 @@ export default function Index({ posts }) {
       <Featured data={posts} spacing="30px" height="500px" width="366px" />
       <Divider title="CHECK THIS OUT" base="#2B2B2B" color="white" />
       <Franchise data={posts} />
+      <Info />
     </Layout>
   );
 }

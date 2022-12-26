@@ -2,9 +2,9 @@
 title: "Suzume Stripe"
 gender: "Unisex"
 category: "T-Shirt"
-date: "07/12/2022"
+date: "08/12/2022"
 bannerImage: "https://i.ibb.co/nc688XB/2.png"
-price: "Rp.100.000,00"
+price: "Coming Soon!"
 shopee: "https://shopee.co.id"
 tokopedia: "https://tokopedia.com"
 tags:

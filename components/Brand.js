@@ -6,7 +6,7 @@ import { Text } from "@chakra-ui/react";
 
 const Brand = ({ linkto }) => (
   <Link href={linkto}>
-    <Text className="brand" fontSize="3xl">
+    <Text className="Brand" fontSize="3xl">
       AERO<b>NAVY</b>
     </Text>
   </Link>

@@ -67,18 +67,19 @@ export default function WithSubnavigation() {
         </Flex>
 
         <Stack flex={{ base: 1, md: 0 }} justify={"flex-end"} direction={"row"}>
-          <Button
-            borderRadius={0}
-            href={"/"}
-            bgColor="#ffc30c"
-            textColor="black"
-            _hover={{
-              textDecoration: "none",
-              bg: useColorModeValue("gray.200", "gray.700"),
-            }}
-          >
-            SHOP
-          </Button>
+          <Link href="/shops">
+            <Button
+              borderRadius={0}
+              bgColor="#ffc30c"
+              textColor="black"
+              _hover={{
+                textDecoration: "none",
+                bg: useColorModeValue("gray.200", "gray.700"),
+              }}
+            >
+              SHOP
+            </Button>
+          </Link>
         </Stack>
       </Flex>
 

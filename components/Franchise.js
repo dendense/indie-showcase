@@ -5,7 +5,6 @@ import { Box } from "@chakra-ui/react";
 import PostCard from "../components/PostCard";
 
 export default function Franchise({ data, category }) {
-  console.log(data);
   return (
     <Box padding="4">
       <PostCard data={data} category={category} />

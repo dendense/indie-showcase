@@ -9,7 +9,7 @@ import Divider from "../components/Divider";
 export default function About() {
   return (
     <Layout
-      title="ABOUT | AERONAVY"
+      title="SHOP | AERONAVY"
       description="A Little Things About Us"
       sidebar="no"
     >

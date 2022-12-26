@@ -48,7 +48,7 @@ export default function Posts({ frontmatter, content, posts }) {
             dangerouslySetInnerHTML={{ __html: md().render(content) }}
           />
           <Text mt="5">
-            {gender} | {category}
+            {gender} | <Link href={`/category/${category}`}>{category}</Link>
           </Text>
           <Text fontSize="3xl">{price}</Text>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 5 }} spacing="10px">
@@ -58,13 +58,19 @@ export default function Posts({ frontmatter, content, posts }) {
               </Link>
             </Button>
             <Button colorScheme="green" size="md">
-              <Link href={tokopedia} target="_blank" _disabled="yes">
+              <Link href={tokopedia} target="_blank" disabled="yes">
                 Tokopedia
               </Link>
             </Button>
           </SimpleGrid>
           {tags.map((tag) => (
-            <Badge borderRadius="full" px="2" colorScheme="teal" mr="1">
+            <Badge
+              key={tag}
+              borderRadius="full"
+              px="2"
+              colorScheme="teal"
+              mr="1"
+            >
               {tag}
             </Badge>
           ))}

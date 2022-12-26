@@ -14,13 +14,13 @@ export default function Contact() {
       <SimpleGrid padding="10" columns={{ base: 1, md: 2, lg: 4 }}>
         <Image src="./Logo.jpg" rounded="lg" w="400px" />
         <Box padding="4">
-          <Text className="brand">
+          <Text className="Brand">
             <b>CONTACT US</b>
           </Text>
-          <Text className="brand" fontSize="3xl">
+          <Text className="Brand" fontSize="3xl">
             <b>Get in touch today!</b>
           </Text>
-          <Text className="brand">
+          <Text className="Brand">
             <b>Phone :</b>
             <br />
             <Button colorScheme="green">
