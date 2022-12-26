@@ -7,7 +7,7 @@ export default function Info() {
   return (
     <SimpleGrid column={{ base: 1, md: 2, lg: 4 }}>
       <Box>
-        <img src="./olshop.png" alt="" />
+        <img src="./OnlineShop.png" alt="" />
       </Box>
     </SimpleGrid>
   );
