@@ -19,8 +19,6 @@ export default function Index({ posts }) {
       <Carousel />
       <Divider title="WELCOME TO AERONAVY" base="#ffc30c" color="black" />
       <Featured data={posts} spacing="30px" height="500px" width="366px" />
-      <Divider title="CHECK THIS OUT" base="#2B2B2B" color="white" />
-      <Franchise data={posts} />
       <Info />
     </Layout>
   );

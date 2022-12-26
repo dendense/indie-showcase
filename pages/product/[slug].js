@@ -15,8 +15,7 @@ import {
 
 // Importing Local Component
 import Layout from "../../components/Layout";
-import Divider from "../../components/Divider";
-import Franchise from "../../components/Franchise";
+import Info from "../../components/Info";
 
 export default function Posts({ frontmatter, content, posts }) {
   const {
@@ -76,10 +75,7 @@ export default function Posts({ frontmatter, content, posts }) {
           ))}
         </Box>
       </Box>
-      <Divider title="EXPLORE PRODUCTS" base="#2B2B2B" color="white" />
-      <Box align="center" justify="center" p="10">
-        <Franchise data={posts} />
-      </Box>
+      <Info />
     </Layout>
   );
 }
